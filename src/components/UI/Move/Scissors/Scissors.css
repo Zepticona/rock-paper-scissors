@@ -1,0 +1,13 @@
+.Scissors {
+  width: 20rem;
+  height: 20rem;
+  background-color: white;
+  display: flex;
+  padding: 5rem;
+  border-radius: 50%;
+  clip-path: circle;
+  border: 2rem solid sandybrown;
+}
+.Scissors img {
+  display: block;
+}

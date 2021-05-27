@@ -1,0 +1,13 @@
+main {
+  grid-column: 4 / 9;
+}
+.Layout {
+  background-color: #182545;
+  padding-top: 2vh;
+  display: grid;
+  grid-template-rows: 25vh 65vh;
+  row-gap: 8vh;
+  grid-template-columns:
+    [full-start] minmax(2vw, 1fr) [center-start] repeat(9, minmax(20px, 100px))
+    [center-end] minmax(2vw, 1fr) [full-end];
+}

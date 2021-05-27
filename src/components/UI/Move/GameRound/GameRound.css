@@ -1,0 +1,4 @@
+.GameRound {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,30 @@
+.Header {
+  border: 3px solid #1e3253;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  grid-column: 3 / 10;
+
+  display: flex;
+  justify-content: space-between;
+}
+.Logo {
+  display: block;
+}
+.ScoreBox {
+  width: 10rem;
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #1e3352;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+.ScoreBox__Score {
+  display: block;
+  font-size: 6rem;
+  margin-left: -5px;
+}
