@@ -2,16 +2,13 @@ import React, { Component } from 'react';
 
 import './App.css';
 
-import Layout from './components/Layout/Layout';
-import Game from './containers/Game/Game';
+import Layout from './containers/Layout/Layout';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Layout>
-          <Game></Game>
-        </Layout>  
+        <Layout />  
       </div>
     );
   }

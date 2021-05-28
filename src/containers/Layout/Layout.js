@@ -1,24 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
+import classes from './Layout.css';
+
+import Header from '../../components/UI/Header/Header';
 import PlayerMove from '../../components/UI/Move/PlayerMove/PlayerMove';
 import GameRound from '../../components/UI/Move/GameRound/GameRound';
 
-class Game extends Component {
-    // constructor() {
-    //     super();
-
-    //     this.state = {
-    //         gamePlaying: false,
-    //         score: {
-    //             player: 0,
-    //             computer: 0
-    //         },
-    //         showRules: false,
-    //         roundOwn: false,
-    //         count: 0
-    //     }
-    // }
-
+class Layout extends Component {
     state = {
         gamePlaying: false,
         playerMove: 'rock',
@@ -79,7 +67,7 @@ class Game extends Component {
         else if(playerMove === 'paper' && computerMove === 'rock') {
             winner = 'player';
         }
-        else if(playerMove === 'scissor' && computerMove === 'paper') {
+        else if(playerMove === 'scissors' && computerMove === 'paper') {
             winner = 'player';
         }
         else if(playerMove === 'rock' && computerMove === 'paper') {
@@ -133,15 +121,20 @@ class Game extends Component {
                         computerMove={this.state.computerMove} 
                         roundWinner={this.state.roundWinner}
                         playAgain={this.playAgainHandler}
+                        playerPlayed={true}
+                        computerPlayed={true}
                         roundPlayed={true} />
         }
 
         return(
-            <div>
-                {display}
+            <div className={classes.Layout}>
+                <Header playerRoundScore={this.state.score.player} />
+                <main>
+                    {display}
+                </main>
             </div>
         )
     }
 }
 
-export default Game;
+export default Layout;

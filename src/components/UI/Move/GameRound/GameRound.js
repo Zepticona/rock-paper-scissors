@@ -9,20 +9,20 @@ import PlayAgain from '../../PlayAgain/PlayAgain';
 const gameRound = (props) => {
     let playerMove;
     if(props.playerMove === 'rock') {
-        playerMove = <Rock clickable={false} />
+        playerMove = <Rock playerPlayed={true} clickable={false} />
     } else if(props.playerMove === 'paper') {
-        playerMove = <Paper clickable={false} />
+        playerMove = <Paper playerPlayed={true} clickable={false} />
     } else if(props.playerMove === 'scissors') {
-        playerMove = <Scissors clickable={false} />
+        playerMove = <Scissors playerPlayed={true} clickable={false} />
     } 
 
     let computerMove;
     if(props.computerMove === 'rock') {
-        computerMove = <Rock clickable={false} />
+        computerMove = <Rock computerPlayed={true} clickable={false} />
     } else if(props.computerMove === 'paper') {
-        computerMove = <Paper clickable={false} />
+        computerMove = <Paper computerPlayed={true} clickable={false} />
     } else if(props.computerMove === 'scissors') {
-        computerMove = <Scissors clickable={false} />
+        computerMove = <Scissors computerPlayed={true} clickable={false} />
     }
 
     let playAgain;

@@ -1,5 +1,7 @@
 main {
   grid-column: 4 / 9;
+  align-self: center;
+  justify-self: center;
 }
 .Layout {
   background-color: #182545;
